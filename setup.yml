@@ -9,8 +9,8 @@
       msg: "{{ mein_wichtiger_hinweis }}"
 
   - name: print mit Loop
-    debug: name="{{ item }} state=present groups=wheel
+    debug:
+      msg: "moeglich ist {{ item }}"
     loop:
       - Euro-League
       - Champions-League
-    msg: "moeglich ist {{ item }}"
