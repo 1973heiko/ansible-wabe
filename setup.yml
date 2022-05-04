@@ -10,5 +10,16 @@
       msg: "Hello  Europapokal!" 
       
   - name: Erstelle eine Datei
+    file:
       path: /tmp/eineDatei
       state: touch
+
+  - name: Erstelle einen Ordner
+    file:
+      path: /tmp/einenOrdner
+      state: directory    
+      
+  - name: Erstelle einen Ordner
+    file:
+      path: /tmp/einenOrdner
+      state: directory
