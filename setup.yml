@@ -4,26 +4,6 @@
   remote_user: root
 
   tasks:
-
-  - name: Hello Server
-    debug:
-      msg: "Hello  Europapokal!" 
-      
-  - name: Erstelle eine Datei
-    file:
-      path: /tmp/eineDatei
-      state: touch
-
-  - name: Erstelle einen Ordner
-    file:
-      path: /tmp/einenOrdner
-      state: directory    
-      
-  - name: Erstelle einen Ordner
-    file:
-      path: /tmp/einenOrdner
-      state: directory
-
   - name: Hello Variable
     debug:
-      msg: "{{ mein_wichtiger_hinweis }}" 
+      msg: "{{ mein_wichtiger_hinweis }}"
