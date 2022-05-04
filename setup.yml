@@ -6,4 +6,10 @@
   tasks:
   - name: Hello Variable
     debug:
-      msg: "{{ mein_wichtiger_hinweis | upper }}"
+      msg: "{{ mein_wichtiger_hinweis }}"
+
+- name: print mit Loop
+  user: name="{{ item }} state=present groups=wheel
+  loop:
+    - anna
+    - paul
