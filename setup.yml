@@ -13,3 +13,4 @@
   loop:
     - anna
     - paul
+  msg: "{{ item }}"
