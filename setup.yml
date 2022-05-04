@@ -10,5 +10,5 @@
       msg: "Hello  Europapokal!" 
       
   - name: Erstelle eine Datei
-    path: /tmp/eineDatei
-    state: touch
+      path: /tmp/eineDatei
+      state: touch
