@@ -23,3 +23,7 @@
     file:
       path: /tmp/einenOrdner
       state: directory
+
+  - name: Hello Variable
+    debug:
+      msg: "{{ mein_wichtiger_hinweis }}" 
