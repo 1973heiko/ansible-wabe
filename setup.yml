@@ -6,4 +6,4 @@
   tasks:
   - name: Hello Variable
     debug:
-      msg: "{{ mein_wichtiger_hinweis }}"
+      msg: "{{ mein_wichtiger_hinweis | upper }}"
